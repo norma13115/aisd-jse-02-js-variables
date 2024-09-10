@@ -44,44 +44,65 @@ console.log(birthYear); // Expected Output: 1998
 
 ## 3. **Make Your Console Logs More Readable**
 
-By default, `console.log()` outputs the variable value alone. To make the output more readable, you can use strings to provide context.
-- [ ] Update your `console.log()` 
+Currently the `console.log()` we created outputs the variable value alone. To make the output more readable, you can use strings to provide context.
+- [ ] Update your `console.log()` to the following
 
 ```js
 console.log("Initial Age:", age); // Expected Output: Initial Age: 25
+
 console.log("Birth Year:", birthYear); // Expected Output: Birth Year: 1998
 ```
 
+- [ ] See your code in action: Run the JavaScript file in your terminal by entering the command `node index.js` and pressing Enter.
+
 **Explanation:**
-- The first `console.log()` simply prints the value of `name`.
-- The second `console.log()` uses a string and a variable to provide a clearer message in the console.
+- Now our `console.log()` uses a string and a variable to provide a clearer message in the console.
 
-## 4. **Building On Previous Examples: Demonstrate Variable Mutability**
-
-### Example 3:
-
+## 4. **Explore `let` in Action**
 Let's modify the `age` variable declared with `let` and observe the behavior of `const`:
 
+- [ ] Open your `index.js` file and change the value of the `age` variable to 30.
+
 ```js
-// Modify the age variable
+// Modify let variable
 age = 30; 
 console.log("Updated Age: ", age); // Expected Output: Updated Age: 30
+```
 
+- [ ] See your code in action: Run the JavaScript file in your terminal by entering the command `node index.js` and pressing Enter.
+
+**Explanation:**
+- `age` is declared with `let`, so we can change its value later.
+
+
+## 5. **Explore `const` in Action**
+Now, let's observe what happens when you try to modify a `const` variable.
+
+- [ ] Open your `index.js` file and add the following code:
+
+```js
 // Attempt to modify the const variable birthYear
 // Uncommenting the next line will cause an error
 // birthYear = 2000; // Error: Assignment to constant variable.
 console.log("Birth Year: ", birthYear); // Expected Output: Birth Year: 1998
 ```
+- [ ] Attempt to change the value of the `birthYear` variable to 2000 by uncommenting the line modifying our `birthYear` variable. If done successfully, your code should look like the following:
+
+```js
+// Attempt to modify the const variable birthYear
+// Uncommenting the next line will cause an error
+birthYear = 2000; // Error: Assignment to constant variable.
+console.log("Birth Year: ", birthYear); // Expected Output: Birth Year: 1998
+```
+- [ ] See your code in action: Run the JavaScript file in your terminal by entering the command `node index.js` and pressing Enter.
+
 
 **Explanation:**
-- `age` is declared with `let`, so we can change its value later. 
 - `birthYear` is declared with `const`, so any attempt to change its value will result in an error.
 
-## 5. **Using Variables in Expressions**
+## 6. **Apply Variables in Expressions**
 
 You can also use variables in mathematical expressions:
-
-### Example 4:
 
 ```js
 let currentYear = 2024;
@@ -98,7 +119,7 @@ console.log("Years Since Birth After Update: ", yearsSinceBirth); // Expected Ou
 - This example shows how `let` allows for reassigning new values and using them in expressions.
 - When `currentYear` is updated, the calculation automatically reflects the change.
 
-## 6. **Combining String Variables and Constants**
+## 7. **Combining String Variables and Constants**
 
 You can combine string variables and constants to create sentences:
 
@@ -120,9 +141,11 @@ console.log("Updated Greeting: ", personalizedGreeting); // Expected Output: Hel
 - `const greeting` is not changed, while `let userName` can be reassigned.
 - The output shows how we can construct a dynamic greeting message.
 
-## 7. **Test and Run Your JavaScript Code**
+## 8. **Decide Which Variable Type to Use**
+Before writing more code, it's important to understand when to use `let` versus `const` to make your code safer and more predictable.
 
-- [ ] Open your `index.js` file in a browser's developer tools console or a JavaScript environment and see the output.
+- [ ] In general, you should use `const` by default to declare your variables. This practice ensures that you don't accidentally change the value of a variable without intending to, providing a safeguard for your code.
+- [ ] Use `let` only when you know the variable's value will need to be modified or reassigned later. For example, if you are working with values that change over time, like counters or state variables, `let` is the appropriate choice.
 
 ## Conclusion 📄
 
