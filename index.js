@@ -1,3 +1,4 @@
+
 // Using let to declare a variable
 let age = 25; 
 console.log(age); // Expected Output: 25
