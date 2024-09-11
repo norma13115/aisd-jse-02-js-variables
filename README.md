@@ -1,6 +1,6 @@
 # JavaScript Variables
 
-![Screenshot of the finished webpage](assets//complete.png)
+![Screenshot of the finished webpage](assets/images/complete.png)
 
 ## Description 📄
 
